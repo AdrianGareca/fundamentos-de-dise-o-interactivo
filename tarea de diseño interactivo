@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial- scale=1.0">
+    <title>Registro de Pacientes - Clinica</title>
+</head>
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td width="20%"></td> 
+            <td width="80%">
+                <h1>Registro de Pacientes</h1>
+                <form id="pacienteForm"> 
+                    <label for="nombres">Nombres:</label><br>
+                    <input type="text" id="nombres" required><br><br>
+
+                    <label for="apellidos">Apellidos:</label><br>
+                    <input type="text" id="apellidos" required><br><br>
+
+                    <label for="documento">Docuento de Identidad:</label><br>
+                    <input type="text" id="documento" required><br><br>
+
+                    <label for="fecahNacimiento">Fecha de Nacimiento:</label><br>
+                    <input type="text" id="fecahNacimiento" required><br><br>
+
+                    <label for="tipoSangre">Tipo de Sangre:</label><br>
+                    <input type="text" id="tipoSangre" required><br><br>
+
+                    
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
