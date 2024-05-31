@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Principal del Cine</title>
+</head>
+<body style="background-color: #f2f2f2; text-align: center; color: #333;">
+    <h1 style="color: #ff6347;">Bienvenidos al Cine</h1>
+    <table border="0" align="center" cellpadding="10">
+        <tr>
+            <td align="center">
+                <img src="logo.jpg" alt="Logo del Cine" width="200" height="200">
+            </td>
+        </tr>
+    </table>
+    <h2 style="color: #4682b4;">Noticias del Cine</h2>
+    <table border="0" align="center" cellpadding="10" width="80%">
+        <tr>
+            <td style="background-color: #fff; padding: 15px; border-radius: 10px;">
+                <h3 style="color: #ffa500;">Nueva Pelicula de Estreno</h3>
+                <p>Estreno de la nueva pelcula: 'Haikyuu: La batalla del Basurero'.¡No te lo pierdas!</p>
+            </td>
+        </tr>
+            <tdv style="background-color: #fff; padding: 15px; border-radius: 10px;">
+                <h3 style="color: #ffa500;">Promocion de Snacks</h3>
+                <p>Por tiempo limitado, disfruta de Sancks gratis.</p>
+            </td>
+    </table>
+
+    <table border="0" align="center" cellpadding="0">
+        <tr>
+            <td align="center">
+                <a href="login.html">
+                    <button>Inicio de Sesion</button></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login de Usuario</title>
+</head>
+<body>
+    <h1>Login de Usuario</h1>
+    <form action="peliculas.html" method="get">
+        <label for="usuario">Usuario: </label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="password">Contraseña: </label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Iniciar Sesion">
+    </form>
+</body>
+</html>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Seleccionar Pelicula</title>
+</head>
+<body style="text-align: center;">
+    <h1>Seleccionar Pelicula</h1>
+    <form action="detalle_venta.html" method="get">
+        <table align="center" border="0" cellpadding="0">
+            <tr>
+                <td align="center">
+                    <input type="radio" id="pelicula1" name="pelicula" value="Garfield" required>
+                    <label for="pelcula1">Garfield</label><br><br>
+                    <img src="Garfield.jpg" alt="Garfield" width="200" height="200"><br><br>
+                </td>
+                <td align="center">
+                    <input type="radio" id="pelicula2" name="pelcula" value="Dune: Parte 2" required>
+                    <label for="pelicula2">Dune: Parte 2</label><br><br>
+                    <img src="DuneParte2.jpg" alt="Dune: Parte 2" width="200" height="200"><br><br>
+                </td>
+                <td align="center">
+                    <input type="radio" id="pelicula3" name="pelicula" value="Haikyuu la batalla del Basurero" required>
+                    <label for="pelicula3">Haikyuu la batalla del Basurero</label><br><br>
+                    <img src="HaikyuTheDumpsterBattle.jpg" alt="Haikyuu la batalla del Basurero" width="200" height="200"><br><br>
+                </td>
+            </tr>
+        </table>
+        <div align="center">
+            <input type="submit" value="Continuar con la Venta">
+        </div>
+    </form>
+</body>
+</html>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de la Venta</title>
+</head>    
+<body>
+    <h1>Detalle de la Venta</h1>
+    <form id="ventaForm" action="confirmacion.html" method="get">
+        <label for="pelcula">Pelicula</label>
+        <input type="text" id="pelcula" name="pelcula" readonly value=""><br><br>
+        <label for="cantidad">Cantidad de Entradas:</label>
+        <input type="number" id="cantidad" name="cantidad" required><br><br>
+        <label for="precio">Precio por Entrada</label>
+        <input type="number" id="precio" name="precio" value="30" readonly><br><br>
+
+        <label for="snack">Seleccionar un Snack:</label>
+        <input type="radio" id="snack" name="snack" value="Palomitas" required>
+        <label for="snack1">Palomitas</label><br>
+        <input type="radio" id="snack2" name="snack" value="Nachos">
+        <label for="snack2">Nachos</label><br>
+        <input type="radio" id="snack3" name="snack" value="Chocolate">
+        <label for="snack3">Chocolate</label><br><br>
+
+        <label for="bebida">Selecciona una Bebida:</label><br><br>
+        <input type="radio" id="agua" name="bebida" value="Agua 500 ml" required>
+        <label for="agua">Agua 500 ml</label><br>
+        <input type="radio" id="cocacola" name="bebida" value="Coca Cola 500 ml">
+        <label for="cocacola">Coca Cola 500 ml</label><br>
+        <input type="radio" id="fanta" name="bebida" value="Fanta 500 ml">
+        <label for="fanta">Fanta 500 ml</label><br><br>
+
+        <label for="total">Total:</label>
+        <input type="number" id="total" name="total" readonly><br><br>
+
+        <input type="submit" value="Confirmar Venta">
+    </forn>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const urlParams=new URLSearchParams(window.location.search);
+            const pelcula=urlParams.get('pelicula');
+            document.getElementById('pelicula').value=pelcula;
+
+            document.getElementById('ventaForm')
+        })
+    </script>       
+</body>
+</html>
